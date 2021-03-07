@@ -1,0 +1,47 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.post-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  height: 100%;
+  width: 100%;
+}
+
+.post-btn {
+  background-color: #e6b800;
+  text-align: center;
+  margin: 7px;
+  padding: 10px 20px;
+  border: 2px solid grey;
+  font-size: 15px;
+}
+
+#contents {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  border: none;
+  outline-color: lightblue;
+  min-height: 330px;
+}
+
+.createpost-btn {
+  background-color: green;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}

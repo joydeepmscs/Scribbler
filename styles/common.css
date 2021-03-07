@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  color: blue;
+  font-family: "Montez", cursive;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.heading {
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 1px;
+  color: #513B53;
+}
+
+.header-btn-container {
+  padding: 5px;
+}
+
+.signup-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 7px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.signin-btn {
+  width: 100px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 7px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-title {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+
+.modal-close {
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  margin: 10px 0;
+  font-family: "Roboto";
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.modal-popup-btn {
+  background-color: green;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.bottom-banner {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.bottom-banner-text {
+  color: blue;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.createpost-modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 75%;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
