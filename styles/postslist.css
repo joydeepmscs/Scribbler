@@ -1,78 +1,6 @@
 body {
   background-color: #ffeedd;
 }
-
-/*.post-container {
-  height: 100%;
-  width: 90%;
-  padding: 50px 50px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.post {
-  width: 40%;
-  height: 40%;
-  background-color: #fff;
-  margin: 10px 10px 10px 20px;
-  box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
-    0 4px 20px 0 rgba(79, 19, 97, 0.19);
-  float: left;
-  margin-left: 90px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  position: relative;
-  order: 2;
-  align-self: flex-start;
-}
-
-.post-content {
-  width: 85%;
-  display: table-cell;
-  text-align: left;
-  background-color: #e8e8e8;
-  color: #000000;
-  border-radius: 0 15px 15px 0;
-  padding: 0 20px;
-  overflow: hidden;
-  max-lines: 4;
-}
-
-.post-owner {
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 15%;
-  max-width: 15%;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-weight: bold;
-  color: #000;
-}
-
-.post-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: #808080;
-  font-size: 18px;
-}
-
-.post-description {
-  width: 100%;
-  line-height: 1.2em;
-  height: 3.6em;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  justify-content: left;
-}
-*/
 .trash-icon {
   margin: 2px;
   cursor: pointer;
@@ -170,7 +98,7 @@ body {
   font-weight: 500;
   color: grey;
   padding: 0 2% 2% 2%;
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -184,7 +112,7 @@ body {
   color: #222121;
   overflow: hidden;
   white-space: normal;
-  height: 53px; /*6.9vh;*/
+  height: 53px;
   padding: 0 2% 2% 2%;
   margin: 0 0 2% 0;
   font-size: 18px; /*2.4vh;*/

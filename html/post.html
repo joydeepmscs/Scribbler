@@ -1,95 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono|Roboto:wght@100&display=swap"
-          rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../styles/common.css"/>
-    <link rel="stylesheet" type="text/css" href="../styles/post.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono|Roboto:wght@100&display=swap" rel="stylesheet"/>
+
+    <!-- CSS for header component -->
+    <link rel="stylesheet" type="text/css" href="../styles/common.css" />
+
+    <!-- CSS for Post page -->
+    <link rel="stylesheet" type="text/css" href="../styles/post.css" />
 </head>
 <body>
-<div class="header">
-    <div class="title-container">
-        <p class="title">ScriBBler</p>
-        <p class="heading">Explore, Imagine, Create</p>
-    </div>
-    <div class="header-btn-container">
-        <button class="signup-btn" onclick="showSignUp()">Sign Up</button>
-        <button class="signin-btn" onclick="showSignIn()">Sign In</button>
-    </div>
-</div>
+<!-- Importing header component -->
+<common-header></common-header>
 
-<!-- Sign Up Modal -->
-<div id="signup-pop-up-modal" class="modal">
-    <div class="modal-content">
-        <div class="modal-head-container">
-            <h2 class="modal-title">Get Started</h2>
-            <span class="modal-close" onclick="hideSignUp()">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </span>
-        </div>
-        <hr/>
-        <div class="modal-body">
-            <form>
-                <label for="name" class="label-text">Name</label>
-                <input type="text" placeholder="Enter your name" id="name" required/>
-                <label for="username" class="label-text">Username</label>
-                <input type="text" placeholder="Enter your username" id="username" required/>
-                <label for="password" class="label-text">Password</label>
-                <input type="password" placeholder="Enter your password" id="password" required/>
-                <label for="confirmpassword" class="label-text">Confirm Password</label>
-                <input type="password" placeholder="Re-enter your password" id="confirmpassword" required/>
-                <button type="submit" class="modal-popup-btn">Sign Up</button>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- Sign in Modal-->
-<div id="signin-pop-up-modal" class="modal">
-    <div class="modal-content">
-        <div class="modal-head-container">
-            <h2 class="modal-title">Welcome Back!</h2>
-            <span class="modal-close" onclick="hideSignIn()">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </span>
-        </div>
-        <hr/>
-        <div class="modal-body">
-            <form>
-                <label for="signinusername" class="label-text">Username</label>
-                <input type="text" placeholder="Enter your username" id="signinusername" required/>
-                <label for="signinpassword" class="label-text">Password</label>
-                <input type="password" placeholder="Enter your password" id="signinpassword" required/>
-                <button type="submit" class="modal-popup-btn">Sign In</button>
-                <p class="bottom-banner">
-                    Not a member?
-                    <span class="bottom-banner-text" onclick="hideSignIn();showSignUp()">Sign Up</span>
-                </p>
-            </form>
-        </div>
-    </div>
-</div>
-
+<!-- Code for Post Content and Title -->
 <div class="post">
-    <div id="post-header" class="post-title">
-        <h2 class="post-heading">
+    <div id="header" class="post-title">
+        <h2 class="post-heading" id="post-header">
             Everything you should know about 'module' & 'require' in Nodejs
         </h2>
     </div>
     <div class="post-sub-header">
-        <button id="edit" class="post-edit-save-btn" onclick="viewSaveButton()">
-            Edit
-            <i class="fa fa-pencil-square-o"></i>
-        </button>
-        <button id="save" class="post-edit-save-btn" onclick="viewEditButton()">
-            Save
-            <i class="fa fa-floppy-o"></i>
-        </button>
-        <p class="post-owner-name">Srishti Gupta</p>
+        <p class="post-owner-name">
+           Srishti Gupta
+            <span class="post-btn">
+             <button class="post-edit-save-btn" id="edit-btn" onclick="myFunction(this)">
+              Edit <i class="fa fa-pencil-square-o"></i>
+            </button>
+          </span>
+        </p>
     </div>
-    <div class="post-content">
-        <p>
+    <div class="post-content" id="content">
+        <p class="post-text">
             Node.js treats each JavaScript file as a separate module. For
             instance, if you have a file containing some code and this file is
             named xyz.js, then this file is treated as a module in Node, and you
@@ -114,8 +62,30 @@
             button.
         </p>
     </div>
+
+    <!-- Code for Like button -->
+    <div class="like">
+        <button class="add-likes-btn" id="add-likes" onclick="addLike()">
+            Like <i class="fa fa-thumbs-up"></i>
+        </button>
+        <p class="no-like-txt" id="like-count">Be the first person to like this!</p>
+    </div>
+
+    <!-- Code for User Comments -->
+    <div class="comments">
+        <textarea class="comment-box" id="userComment" type="text" placeholder="Leave a comment..."></textarea>
+        <br />
+        <button class="add-comment-btn" onclick="addComment(userComment)">Comment</button>
+    </div>
+
+    <!-- Code for displaying user comments -->
+    <div class="comment-area">
+        <h4>All Comments</h4>
+        <div id="comment-list"></div>
+    </div>
 </div>
-</body>
+<!-- Importing JS scripts -->
 <script src="../scripts/common.js"></script>
 <script src="../scripts/post.js"></script>
+</body>
 </html>
