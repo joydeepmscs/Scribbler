@@ -20,14 +20,11 @@ function hideSignIn() {
     signInModal.style.display = "none";
 }
 
-// Shadow DOM and making header as reusable component
-class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `<div class="header">
-    <div class="header-container">
+// making header as reusable component
+onLoadHeader();
+function onLoadHeader() {
+    var headerTemplate=document.getElementsByClassName("header")[0];
+    headerTemplate.innerHTML = `<div class="header-container">
         <p class="title">ScriBBler</p>
         <p class="subheading">Explore, Imagine, Create</p>
     </div>
@@ -85,9 +82,6 @@ class Header extends HTMLElement {
             </form>
         </div>
     </div>
-</div>
 </div>`;
-    }
-}
 
-customElements.define("common-header", Header);
+}
