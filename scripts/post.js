@@ -26,7 +26,7 @@ function myFunction(button) {
 
 
 function addLike() {
-  var likeButton = document.getElementById("add-likes");
+  var likeButton = document.getElementById("add-like");
   likeButton.innerHTML =
     '<i class="fa fa-thumbs-up ">' + "</i>" + "&nbsp;" + "Liked";
   likeButton.style.border = "none";
