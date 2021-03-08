@@ -10,9 +10,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 48%;
-  left: 40%;
+  position: relative;
+  top: 210px;
 }
 
 .post-btn {
