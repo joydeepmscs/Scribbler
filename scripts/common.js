@@ -5,6 +5,7 @@ function showSignUp() {
 
 function hideSignUp() {
     var signUpModal = document.getElementById("signup-pop-up-modal");
+    document.getElementById("signup-form").reset();
     signUpModal.style.display = "none";
 }
 
@@ -15,6 +16,7 @@ function showSignIn() {
 
 function hideSignIn() {
     var signInModal = document.getElementById("signin-pop-up-modal");
+    document.getElementById("signin-form").reset();
     signInModal.style.display = "none";
 }
 
@@ -45,7 +47,7 @@ class Header extends HTMLElement {
         </div>
         <hr/>
         <div class="modal-body">
-            <form>
+            <form id="signup-form">
                 <label for="name" class="label-text">Name</label>
                 <input type="text" placeholder="Enter your name" id="name" required/>
                 <label for="username" class="label-text">Username</label>
@@ -70,7 +72,7 @@ class Header extends HTMLElement {
         </div>
         <hr/>
         <div class="modal-body">
-            <form>
+            <form id="signin-form">
                 <label for="signinusername" class="label-text">Username</label>
                 <input type="text" placeholder="Enter your username" id="signinusername" required/>
                 <label for="signinpassword" class="label-text">Password</label>

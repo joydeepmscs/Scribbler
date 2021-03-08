@@ -9,5 +9,6 @@ function showCreatePost() {
 
 function hideCreatePost() {
     var createPostModal = document.getElementById("createpost-pop-up-modal");
+    document.getElementById("createpost-form").reset();
     createPostModal.style.display = "none";
 }
