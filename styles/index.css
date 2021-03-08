@@ -37,14 +37,30 @@ body {
 
 .createpost-btn {
   background-color: green;
-  padding: 10px;
+  padding: 1%;
   width: 15%;
   border: none;
   color: #fff;
-  font-size: 15px;
-  margin-top: 25px;
-  margin-left: 420px;
+  font-size: 85%;
+  margin-top: 2%;
+  margin-left: 42%;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-label-text {
+  margin: 5px 0px 5px 0px;
+  font-family: "Roboto";
+}
+.createpost-modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
 }
