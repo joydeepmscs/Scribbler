@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono|Roboto:wght@100&display=swap" rel="stylesheet"/>
 
-    <!-- CSS for header component -->
+    <!-- CSS for common header component -->
     <link rel="stylesheet" type="text/css" href="../styles/common.css" />
 
     <!-- CSS for Post page -->
@@ -63,9 +63,9 @@
         </p>
     </div>
 
-    <!-- Code for Like button -->
+    <!-- Like button -->
     <div class="like">
-        <button class="add-likes-btn" id="add-likes" onclick="addLike()">
+        <button class="add-like-btn" id="add-like" onclick="addLike()">
             <i class="fa fa-thumbs-up"></i> Like
         </button>
         <p class="no-like-txt" id="like-count">Be the first person to like this!</p>
@@ -78,7 +78,7 @@
         <button class="add-comment-btn" onclick="addComment(userComment)">Comment</button>
     </div>
 
-    <!-- Code for displaying user comments -->
+    <!-- displaying user comments -->
     <div class="comment-area">
         <h4>All Comments</h4>
         <div id="comment-list"></div>
