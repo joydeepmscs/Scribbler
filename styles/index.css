@@ -21,6 +21,7 @@ body {
   padding: 10px 20px;
   border: 2px solid grey;
   font-size: 15px;
+  cursor: pointer;
 }
 
 #contents {
