@@ -24,7 +24,7 @@
     <button class="post-btn" onclick="showCreatePost()">Create Post</button>
 </div>
 
-<div id="createpost-pop-up-modal" class="modal">
+<div id="createpost-modal" class="modal">
     <div class="createpost-modal-content">
         <div class="modal-head-container">
             <h2 class="modal-title">Pen Your Post</h2>
@@ -34,9 +34,9 @@
         </div>
         <hr/>
         <form id="createpost-form">
-            <label for="title" class="label-text">Title</label>
+            <label for="title" class="post-label-text">Title</label>
             <input type="text" id="title" placeholder="Enter title of your post" required/>
-            <label for="contents" class="label-text">Contents</label>
+            <label for="contents" class="post-label-text">Contents</label>
             <textarea id="contents" placeholder="Enter the contents of your post" required></textarea>
             <button type="submit" class="createpost-btn">Create</button>
         </form>

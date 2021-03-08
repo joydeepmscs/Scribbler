@@ -3,12 +3,12 @@ function loadAllPosts() {
 }
 
 function showCreatePost() {
-    var createPostModal = document.getElementById("createpost-pop-up-modal");
+    var createPostModal = document.getElementById("createpost-modal");
     createPostModal.style.display = "flex";
 }
 
 function hideCreatePost() {
-    var createPostModal = document.getElementById("createpost-pop-up-modal");
+    var createPostModal = document.getElementById("createpost-modal");
     document.getElementById("createpost-form").reset();
     createPostModal.style.display = "none";
 }
