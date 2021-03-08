@@ -1,20 +1,22 @@
 function showSignUp() {
-    var signUpModal = document.getElementById("signup-pop-up-modal");
+    var signUpModal = document.getElementById("signup-modal");
     signUpModal.style.display = "flex";
 }
 
 function hideSignUp() {
-    var signUpModal = document.getElementById("signup-pop-up-modal");
+    var signUpModal = document.getElementById("signup-modal");
+    document.getElementById("signup-form").reset();
     signUpModal.style.display = "none";
 }
 
 function showSignIn() {
-    var signInModal = document.getElementById("signin-pop-up-modal");
+    var signInModal = document.getElementById("signin-modal");
     signInModal.style.display = "flex";
 }
 
 function hideSignIn() {
-    var signInModal = document.getElementById("signin-pop-up-modal");
+    var signInModal = document.getElementById("signin-modal");
+    document.getElementById("signin-form").reset();
     signInModal.style.display = "none";
 }
 
@@ -25,9 +27,9 @@ class Header extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `<div class="header">
-    <div class="title-container">
+    <div class="header-container">
         <p class="title">ScriBBler</p>
-        <p class="heading">Explore, Imagine, Create</p>
+        <p class="subheading">Explore, Imagine, Create</p>
     </div>
     <div class="header-btn-container">
         <button class="signup-btn" onclick="showSignUp()">Sign Up</button>
@@ -35,7 +37,7 @@ class Header extends HTMLElement {
     </div>
 
 <!-- Sign Up Modal -->
-<div id="signup-pop-up-modal" class="modal">
+<div id="signup-modal" class="modal">
     <div class="modal-content">
         <div class="modal-head-container">
             <h2 class="modal-title">Get Started</h2>
@@ -45,7 +47,7 @@ class Header extends HTMLElement {
         </div>
         <hr/>
         <div class="modal-body">
-            <form>
+            <form id="signup-form">
                 <label for="name" class="label-text">Name</label>
                 <input type="text" placeholder="Enter your name" id="name" required/>
                 <label for="username" class="label-text">Username</label>
@@ -60,7 +62,7 @@ class Header extends HTMLElement {
     </div>
 </div>
 <!-- Sign in Modal-->
-<div id="signin-pop-up-modal" class="modal">
+<div id="signin-modal" class="modal">
     <div class="modal-content">
         <div class="modal-head-container">
             <h2 class="modal-title">Welcome Back!</h2>
@@ -70,7 +72,7 @@ class Header extends HTMLElement {
         </div>
         <hr/>
         <div class="modal-body">
-            <form>
+            <form id="signin-form">
                 <label for="signinusername" class="label-text">Username</label>
                 <input type="text" placeholder="Enter your username" id="signinusername" required/>
                 <label for="signinpassword" class="label-text">Password</label>
