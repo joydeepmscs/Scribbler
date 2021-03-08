@@ -29,6 +29,7 @@
   margin: 7px;
   padding: 10px 20px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .signin-btn {
@@ -40,6 +41,7 @@
   margin: 7px;
   padding: 10px 20px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .modal {
