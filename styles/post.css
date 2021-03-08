@@ -12,10 +12,12 @@
 
 .post-owner-name {
   font-family: "Ubuntu Mono", monospace;
-  font-size: 100%;
+  font-size: 120%;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 .post-content {
