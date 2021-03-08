@@ -28,7 +28,7 @@ function myFunction(button) {
 function addLike() {
   var likeButton = document.getElementById("add-likes");
   likeButton.innerHTML =
-    '<i class="fa fa-thumbs-up ">' + "</i>" + "&nbsp;" + "Liked!";
+    '<i class="fa fa-thumbs-up ">' + "</i>" + "&nbsp;" + "Liked";
   likeButton.style.border = "none";
   numberOfClick += 1;
   if (numberOfClick != 0) {
@@ -37,18 +37,21 @@ function addLike() {
         numberOfClick + " person likes this!";
     } else {
       document.getElementById("like-count").innerHTML =
-        numberOfClick + " people likes this!";
+        numberOfClick + " people like this!";
     }
   }
 }
 
+// Method to add user comments
 function addComment(comment) {
   if (comment.value.length > 0) {
+    var commentBox = document.getElementById("comment-list");
+    commentBox.style.display = "flex";
     document.getElementById("comment-list").innerHTML +=
-      '<p id="comment-posted">' + comment.value + "</p>";
+        '<p id="comment-posted">' + comment.value + "</p>";
     var userComment = document.getElementById("userComment");
     userComment.value = userComment.defaultValue;
   } else {
-    alert("Enter some comment");
+    alert("Please enter some comment");
   }
 }
